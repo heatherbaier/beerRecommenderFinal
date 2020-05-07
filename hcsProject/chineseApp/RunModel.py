@@ -36,7 +36,7 @@ def trainModel():
     # Drop null values
     df['beer/style'].dropna(inplace=True)
     df['review/text'].dropna(inplace=True)
-    df = df[0:2000]
+    df = df[0:10000]
 
     # Encode the beer styles for training
     le = LabelEncoder()
